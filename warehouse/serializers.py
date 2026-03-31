@@ -1,0 +1,1 @@
+# serializer ishinde discount_price < price boliwin tekseriw kerek
