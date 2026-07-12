@@ -1,1 +1,7 @@
-/.venv
+.venv/
+__pycache__/
+.env
+*.pyc
+.idea
+db.sqlite3
+my_notebook.txt
