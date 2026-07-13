@@ -42,6 +42,12 @@ services:  # Servisler (Konteynerler) dizimi
       - certbot_www:/var/www/certbot
     depends_on:
       - web # Django iske túskennen keyin Nginx iske tússin
+  # JAŃA SERVIS: Certbot
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - certbot_conf:/etc/letsencrypt
+      - certbot_www:/var/www/certbot
 
 volumes:
   postgres_data:  # Baza maǵlıwmatları saqlanatuǵın orın
