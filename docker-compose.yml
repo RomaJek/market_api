@@ -14,8 +14,8 @@ services:  # Servisler (Konteynerler) dizimi
   # 2-servis: Biziń Django joybarımız
   web:
     build: .  # Dockerfile-di usı papkadan izle hám qur
-    command: python manage.py runserver 0.0.0.0:8000  # Islep shıǵıw ushın
-    # command: gunicorn config.wsgi:application --bind 0.0.0.0:8000
+    # command: python manage.py runserver 0.0.0.0:8000  # Islep shıǵıw ushın
+    command: gunicorn config.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - .:/app  # Kodtı jańalaw (Hot-reload) ushın
       - static_volume:/app/staticfiles  # Jańa volume!
